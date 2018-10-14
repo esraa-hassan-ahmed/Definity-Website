@@ -1,0 +1,43 @@
+.about-sec4{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../dist/Pic/BG4.jpg);
+    background-position: center;
+    background-size: cover;  
+    text-align: center;
+    button{
+        @extend .btn-light;
+        font-size: 15px;
+        padding: 10px 45px;
+        a{
+            text-decoration: none;
+            color: $secondary;
+            transition: all 1.2s;
+        }
+    }
+    button:hover{
+        a{
+            color: $primary;
+        }
+    }
+    h4{
+        color:$primary;
+        margin-bottom: 40px;
+        font-size: 22px;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+        line-height: 40px;
+        transition: all 0.5s;
+    }
+}
+
+/* Extra Small devices */
+@media only screen and (max-width: 575px) {
+    .about-sec4{
+        h4{
+            font-size: 15px;
+        }
+        button{
+            font-size: 12px;
+        }
+    }
+
+} 

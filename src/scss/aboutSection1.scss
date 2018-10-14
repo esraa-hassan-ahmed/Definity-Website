@@ -1,0 +1,42 @@
+.about-sec1{
+    .first-row{
+        margin-bottom: 80px;
+    }
+    .row{
+        .col-lg-4{
+            .col-lg-9{
+                padding-left: 25px;
+                h4{
+                    font-weight: 600;
+                    margin-bottom: 18px;
+                }
+            }
+            span{
+                @extend .rotate-span;
+                width: 85px;
+                height: 85px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices */
+@media only screen and (max-width: 991px) {
+    .about-sec1{
+        .row{
+            margin-bottom: 0;
+            .col-lg-4{
+                margin-bottom: 35px;
+                .col-lg-3{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

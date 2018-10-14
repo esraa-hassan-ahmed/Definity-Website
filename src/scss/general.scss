@@ -1,0 +1,196 @@
+.btn-light{
+    background-color: $primary;
+    color: $secondary;
+}
+.btn-light:hover{
+    background-color: $secondary;
+    color: $primary;
+}
+.btn-dark{
+    background-color: $secondary;
+    color: $primary;
+    border: 1px solid $primary;
+}
+.btn-dark:hover{
+    background-color: $primary;
+    color: $secondary;
+    border: 1px solid $secondary;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 1.2s;
+}
+button:hover{
+    cursor: pointer;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    margin-bottom: 35px;
+    transition: all 0.5s;
+}
+h6{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: $success;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+p{
+    color: $info;
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 25px;
+}
+section{
+    padding: 150px 0;
+    .center-div{
+        text-align: center;
+        margin-bottom: 120px;
+    }
+}
+.light-span{
+    font-weight: 300;
+    font-size: 15px;
+    color: $info;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    opacity: 0;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    opacity: 0;
+    transition: all 0.8s;
+}
+.carousel:hover{
+    .carousel-control-prev,
+    .carousel-control-next{
+        opacity: 1;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        opacity: 1;
+    }
+}
+.rotate-span{
+    display: inline-block;
+    color: #f8f8f8;
+    border: 1px solid rgba(17, 17, 17, 0);
+    background-color: #111;
+    font-size: 45px;
+    line-height: 109px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s;
+}
+.col-lg-3:hover, .col-lg-4:hover{
+    .rotate-span{
+        background-color: white;
+        color: black;
+        border: 1px solid #D2D2D2;
+        transform: rotateY(180deg)
+    }
+}
+
+.card-shadow{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    .card-body{
+        padding: 30px;
+    }
+}
+.card-shadow:hover{
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+}
+.center-col{
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px 130px;
+    transition: all 0.5s;
+    p{
+        width: 73%;
+        margin: 45px 0;
+    }
+    h2{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    span{
+        font-size: 13px;
+    }
+    button{
+        background-color: transparent;
+        border: 2px solid $secondary;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    button:after{
+        content: '';
+        position: absolute;
+        background-color: $secondary;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top:100%;
+        transition: top 0.3s;
+        z-index: -1;
+    }
+    button:hover{
+        color: $primary;
+    }
+    button:hover:after{
+        top:0;
+    }
+}
+/* Extra Small devices */
+@media only screen and (max-width: 575px) {
+    h1{
+        font-size: 35px;
+    }
+    .center-col{
+        padding-left: 50px;
+    }
+} 

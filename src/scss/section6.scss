@@ -1,0 +1,83 @@
+.sec6{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../../dist/Pic/BG3.jpg);
+    background-position: center;
+    background-size: cover;  
+    background-attachment: fixed;
+    color: $primary;
+    text-align: center;
+    text-transform: uppercase;
+    .img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto 25px auto;
+    }
+    .test1{
+        background-image: url(../../dist/Pic/test1.jpg);
+    }
+    .test2{
+        background-image: url(../../dist/Pic/test2.jpg);
+    }
+    .test3{
+        background-image: url(../../dist/Pic/test3.jpg);
+    }
+    p{
+        width: 70%;
+        color: #ececec;
+        font-size: 15px;
+        margin: 0 auto;
+        letter-spacing: 5px;
+        word-spacing: 2px;
+        line-height: 30px;
+        transition: all 0.5s;
+    }
+    .name{
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    .quote{
+        font-size: 25px;
+        border: 1px solid #ececec;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 25px 0;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        color: #ececec;
+        border: 1px solid #ececec;
+        padding: 20px;
+        i{
+            font-size: 20px;
+        }
+    }
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+        color: $secondary;
+        background-color: #ececec;
+        border: 1px solid #ececec;
+        padding: 20px;
+    }
+    .brand-slider{
+        margin: 120px auto 0 auto;
+        text-align: center;
+        img{
+            display: initial;
+            outline: none;
+        }
+        .slick-slide{
+            outline: 0;
+        }
+    }
+}
+/* Small devices */
+@media only screen and (max-width: 768px) {
+    .sec6{
+        p{
+            font-size: 12px;
+        }
+    }
+}

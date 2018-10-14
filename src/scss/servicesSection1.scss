@@ -1,0 +1,46 @@
+.services-sec1{
+    background-color: #F8F8F8;
+    .col-lg-4{
+        .card-body{
+            padding: 50px 30px;
+        }
+        .lg-line{
+            font-size: 70px;
+            margin-bottom: 40px;
+            color: #666565;
+        }
+        h4{
+            margin-bottom: 30px;
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        button{
+            background-color: transparent;
+            padding: 0 10px 0 0;
+            color: $info;
+        }
+        .right-btn{
+            float: right;
+            color: $info;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            i{
+                font-size: 25px;
+            }
+        }
+        .right-btn:hover, button:hover{
+            color: $secondary;
+        }
+    }
+}
+/* Medium devices */
+@media only screen and (max-width: 991px) {
+    .services-sec1{
+        .col-lg-4{
+           margin-bottom: 60px;
+        }
+    }
+}

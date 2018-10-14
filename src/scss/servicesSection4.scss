@@ -1,0 +1,26 @@
+.services-sec4{
+    margin: 0;
+    .col-lg-6{
+        img{
+            width: 100%;
+        }
+    }
+    .img-col1, .img-col2{
+        padding: 0;
+    }
+}
+/* Medium devices */
+@media only screen and (max-width: 991px) {
+    .services-sec4{
+        margin-bottom: 60px;
+        .col-lg-6{
+           margin-bottom: 30px;
+        }
+        .img-col2{
+            margin-bottom: 0;
+        }
+    }
+    .row2{
+        margin-bottom: 0;
+    }
+}

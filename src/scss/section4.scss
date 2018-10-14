@@ -1,0 +1,48 @@
+.sec4{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../../dist/Pic/BG2.jpg);
+    background-position: top;
+    background-size: cover;  
+    filter: grayscale(100%);
+    background-attachment: fixed;
+    color: $primary;
+    text-align: center;
+    padding: 110px 0;
+    text-transform: uppercase;
+    .circle{
+        position: relative;
+        i{
+            font-size: 80px;
+            position: absolute;
+            top:50px;
+            left: 0;
+            right: 0;
+        }
+        svg{
+            transform: rotate(-90deg);
+        }
+        .circle-chart-active{
+            animation: dash 1s ease-in-out forwards;
+        }
+        @keyframes dash {
+            from {
+              stroke-dashoffset: 533.8;
+            }
+            to {
+              stroke-dashoffset: 133.45;
+            }
+        }
+    }
+    h4{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
+/* Medium devices */
+@media only screen and (max-width: 991px) {
+    .sec4{
+        .col-lg-3{
+            margin-bottom: 35px;
+        }  
+    }
+}
