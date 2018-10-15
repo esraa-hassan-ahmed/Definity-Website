@@ -24,3 +24,11 @@
         }
     }
 }
+/* Extra small devices */
+@media only screen and (max-width: 575px) {
+    .portfolio-sec1{
+        .center-col{
+            padding-left: 20px;
+        }
+    }
+} 
