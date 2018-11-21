@@ -1,3 +1,14 @@
+.preloader{
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    position: fixed;
+    opacity: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn-light{
     background-color: $primary;
     color: $secondary;

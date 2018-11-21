@@ -1,6 +1,10 @@
 $(" #menu-line").addClass('white-icon');
 $(document).ready(function(){
-
+    
+    /***************************   Preloader ******************************/
+    $(window).on("load", function() {
+        $('.preloader').fadeOut(1000);
+    });
     /****************************** Scroll To Top **********************************/
     $('#return-to-top').click(function() {      
         $('body,html').animate({
@@ -66,7 +70,7 @@ $(document).ready(function(){
         $('.map-position').addClass('map-content');
     });
 
-    /************************* Remove the msg when write in form unput **************************/
+    /************************* Remove the msg when write in form input **************************/
     $( "input" ).keydown(function() {
         $(this).next().html("")
     });

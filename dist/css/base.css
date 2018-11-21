@@ -6288,6 +6288,17 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.preloader {
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  position: fixed;
+  opacity: 1;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .btn-light, .about-sec4 button {
   background-color: #fff;
   color: #000; }
@@ -7006,7 +7017,7 @@ body {
     width: 95%; } }
 
 /* Extra small devices */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575.98px) {
   .sec7 iframe {
     height: 715px; }
   .sec7 .map-content:before {
